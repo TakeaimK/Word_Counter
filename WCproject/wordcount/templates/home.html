@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>about</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="container" style='width:1000px; background:rgb(66, 153, 66)'>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-15">
+                    <h1> Word Counter에 오신 것을 환영합니다! Welcome! </h1>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="container" style='width:110px; background:rgba(199, 201, 102, 0.452)'>
+                    <div class="col-md-10">
+                        <a href="{%url 'about'%}">ABOUT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-15">
+                    <form action="{%url 'result'%}">
+                        <textarea cols="132" rows="10" name="fulltext"></textarea>
+                        <br>
+                        <input type="submit" value="Count !">
+                        <!---<div class="container" style='width:100px; background:rgba(199, 201, 102, 0.452)'>
+                            <input type="submit" value="Count !">
+                        </div>
+                    -->
+                    </form>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
